@@ -1,0 +1,472 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Testing" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Testing_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Testing" sap:VirtualizedContainerService.HintSize="1207,3196" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="1126,3173" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="DepartureFrom" />
+        <Variable x:TypeArguments="x:String" Name="ArrivingTo" />
+        <Variable x:TypeArguments="x:String" Name="StrDepartureDate" />
+        <Variable x:TypeArguments="x:String" Name="StrComeDate" />
+        <Variable x:TypeArguments="x:String" Name="Infant" />
+        <Variable x:TypeArguments="x:String" Name="Children" />
+        <Variable x:TypeArguments="x:String" Name="Adult" />
+        <Variable x:TypeArguments="x:String" Name="ClassBooking" />
+        <Variable x:TypeArguments="x:String" Name="DepDate" />
+        <Variable x:TypeArguments="x:String" Name="ComeDate" />
+        <Variable x:TypeArguments="x:String" Name="MonthYear" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="Insert Value" sap:VirtualizedContainerService.HintSize="1092,57" sap2010:WorkflowViewState.IdRef="Sequence_4">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="416,271" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Departure From" Title="Please select the airport you're departing from">
+          <ui:InputDialog.Result>
+            <OutArgument x:TypeArguments="x:String">[DepartureFrom]</OutArgument>
+          </ui:InputDialog.Result>
+        </ui:InputDialog>
+        <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="416,271" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Arriving To" Title="Please select the airport you're arriving to">
+          <ui:InputDialog.Result>
+            <OutArgument x:TypeArguments="x:String">[ArrivingTo]</OutArgument>
+          </ui:InputDialog.Result>
+        </ui:InputDialog>
+        <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="416,271" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Departure Date MM/DD/YYYY" Title="Please select the date you're departing">
+          <ui:InputDialog.Result>
+            <OutArgument x:TypeArguments="x:String">[StrDepartureDate]</OutArgument>
+          </ui:InputDialog.Result>
+        </ui:InputDialog>
+        <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="416,271" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="Coming Home MM/DD/YYYY" Title="Please select the date you're coming home">
+          <ui:InputDialog.Result>
+            <OutArgument x:TypeArguments="x:String">[StrComeDate]</OutArgument>
+          </ui:InputDialog.Result>
+        </ui:InputDialog>
+        <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="416,271" sap2010:WorkflowViewState.IdRef="InputDialog_5" IsPassword="False" Label="0-Not applicable" Title="Number of Infant( under 2 years old)?">
+          <ui:InputDialog.Result>
+            <OutArgument x:TypeArguments="x:String">[Infant]</OutArgument>
+          </ui:InputDialog.Result>
+        </ui:InputDialog>
+        <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="416,271" sap2010:WorkflowViewState.IdRef="InputDialog_6" IsPassword="False" Label="0-Not applicable" Title="Number of Children( 2-11 years old)?">
+          <ui:InputDialog.Result>
+            <OutArgument x:TypeArguments="x:String">[Children]</OutArgument>
+          </ui:InputDialog.Result>
+        </ui:InputDialog>
+        <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="416,271" sap2010:WorkflowViewState.IdRef="InputDialog_7" IsPassword="False" Title="Number of Adults?">
+          <ui:InputDialog.Result>
+            <OutArgument x:TypeArguments="x:String">[Adult]</OutArgument>
+          </ui:InputDialog.Result>
+        </ui:InputDialog>
+        <ui:InputDialog Label="{x:Null}" Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="416,315" sap2010:WorkflowViewState.IdRef="InputDialog_8" IsPassword="False" OptionsString="First;Business;Business/First;Economy/Premium Economy;Economy" Title="Class">
+          <ui:InputDialog.Result>
+            <OutArgument x:TypeArguments="x:String">[ClassBooking]</OutArgument>
+          </ui:InputDialog.Result>
+        </ui:InputDialog>
+      </Sequence>
+      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="1092,164" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+        <ui:MultipleAssign.AssignOperations>
+          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[MonthYear]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">[DateTime.ParseExact(StrDepartureDate, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture).ToString("MMM yyyy")]</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[ComeDate]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">[DateTime.ParseExact(StrComeDate, "dd/MM/yyyy", System.Globalization.CultureInfo.InstalledUICulture).ToString("MMM yyyy")]</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+          </scg:List>
+        </ui:MultipleAssign.AssignOperations>
+      </ui:MultipleAssign>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Cheap Flights, Lowest Price Air Tickets &amp; Airfares | Trip.com Malaysia" sap:VirtualizedContainerService.HintSize="1092,2869" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="92ba3d1c-b537-4975-a620-6dea06a9c678" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1058,2629" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:Boolean" Default="True" Name="Retryy" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="1" DisplayName="Click 'Kuala LumpurAll airports'" sap:VirtualizedContainerService.HintSize="1024,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="92ba3d1c-b537-4975-a620-6dea06a9c678" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://my.trip.com/flights?locale=en_my&amp;curr=myr&amp;allianceid=14900&amp;sid=1910274&amp;ppcid=ckid-11144453242_adid-83425855246451_akid-kwd-83426630143072:loc-112_adgid-1334809506148564&amp;utm_source=bing&amp;utm_medium=cpc&amp;utm_campaign=603356249&amp;msclkid=efff59ce9b4a150d58733f30d02f97f8" CVScreenId="c4a9b1c9-4e4c-452c-9265-2b8619f07cb6" CvElementArea="501, 372, 19, 19" CvType="Icon" DesignTimeRectangle="504, 372, 14, 21" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' parentid='main' tag='I' class='fi-icon fi-icon_close_line fi-icon_delete' aaname='' /&gt;" Guid="2f76061d-76b7-4cd3-8bfc-1cf5185970f9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAAZCAYAAAA8CX6UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAErSURBVEhL7ZPrTgIxEIV9/6dSYrwkGrmpeAPFBJTsipcHOM5nHWi7BULCT36cTNo587WdnT2Y/0i70B60WStB9Zc0nEjdJ+nyLsTRNOyX/EXQ60w6u5YOr5pin3xek4A+vqXnN+m4W4a4yOPDXwRNa+mkXy7OdWo3w98AQb99kY7awUjkGa3/NfHc1nF+YH6/1QJUWRNpqp+ILgZSf2S37IWiPM+augT0PrcTb1Ljn9lgY2tuDkH4qUtAM9vgBrGx1QnPvR+HyDrO46cuATEfnceliR7wLIcTe8NljxB+n6sFCDFw+amrhA+/1yag6tMmOLrVOuHDXwQh3tx+KBe7eJL3xtUAodpmg/+MoYsBrNknn9cUQS6Gjc87qUKMf4lca0HbaA/arB2BpF8Y6Kg0eqvLowAAAABJRU5ErkJggg==" InformativeScreenshot="d7108fb875e811254761927cd1244950.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Cheap Flights, Lowest Price Air Tickets &amp;amp; Airfares | Trip.com Malaysia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="406, 368, 120, 44" FuzzySelectorArgument="&lt;webctrl type='' parentid='main' tag='SPAN' class='fuzzy-label user-select fuzzy-label-map' aaname='' check:innerText='Kuala Lumpur&amp;#xA;All airports' /&gt;" Guid="9c438afb-98f3-40b2-a9d7-4ad1713b1e3c" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayBefore="1" DisplayName="Type Into 'Return'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1024,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="92ba3d1c-b537-4975-a620-6dea06a9c678" Text="[DepartureFrom]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://my.trip.com/flights?locale=en_my&amp;curr=myr&amp;allianceid=14900&amp;sid=1910274&amp;ppcid=ckid-11144453242_adid-83425855246451_akid-kwd-83426630143072:loc-112_adgid-1334809506148564&amp;utm_source=bing&amp;utm_medium=cpc&amp;utm_campaign=603356249&amp;msclkid=efff59ce9b4a150d58733f30d02f97f8" CVScreenId="262d8fbd-72a1-4e43-9219-ab1fea1e464a" CvElementArea="395, 362, 271, 58" CvType="InputBox" DesignTimeRectangle="404, 369, 101, 44" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='module-input f-16 f-bold color-main placeholder-gray' placeholder='Leaving from' aaname='' /&gt;" Guid="1f2b095d-47ba-4f5a-a308-a8a708fb65fc" InformativeScreenshot="6c3892be759ee267c314b41ac4237a9f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Cheap Flights, Lowest Price Air Tickets &amp;amp; Airfares | Trip.com Malaysia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="262d8fbd-72a1-4e43-9219-ab1fea1e464a" CvTextArea="421, 331, 42, 14" CvTextArgument="Return" CvType="Text" DesignTimeRectangle="422, 332, 41, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Return' parentid='main' tag='SPAN' type='' class='' check:innerText='Return' /&gt;" Guid="7675af7d-4dc6-46f3-86a5-615e8f7d5a77" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayBefore="1" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="1024,247" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
+                <uix:NKeyboardShortcuts.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NKeyboardShortcuts.VerifyOptions>
+              </uix:NKeyboardShortcuts>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="1" DisplayName="Click 'Kota KinabaluAll airpor…'" sap:VirtualizedContainerService.HintSize="1024,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="92ba3d1c-b537-4975-a620-6dea06a9c678" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://my.trip.com/flights?locale=en_my&amp;curr=myr&amp;allianceid=14900&amp;sid=1910274&amp;ppcid=ckid-11144453242_adid-83425855246451_akid-kwd-83426630143072:loc-112_adgid-1334809506148564&amp;utm_source=bing&amp;utm_medium=cpc&amp;utm_campaign=603356249&amp;msclkid=efff59ce9b4a150d58733f30d02f97f8" CVScreenId="3805f40c-8883-48c3-9588-c87dc2064e31" CvElementArea="788, 372, 20, 20" CvType="Icon" DesignTimeRectangle="791, 372, 14, 21" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='fi-icon fi-icon_close_line fi-icon_delete' parentid='main' tag='I' aaname='' /&gt;" Guid="b3557fc8-d7ca-404f-a9c1-0ae7ccc06b62" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAAZCAYAAAA8CX6UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAErSURBVEhL7ZPZTgJBEEX5/68SNAgkAgLKJpIBZBkYFv2AS91MCnspnJjwyMN56Jnq07V0lw4/wC24i4q5KkoPwMcCaI+BlyHQ/QQWW2D/bcdHokwCJ1/AUwd4aMW0RsAm8/cQT0RJPwHKbVui1N6AVSDzRNMVUHm1N4c0pdzt0RDtTnnaGliRrHiyrllqtfe7fpR1sjFETNUNZHmdSd7sZxGOZvLfERO2QZt/EXEiYYMp47SSdSwhPCiTSjzRcifBXT+QGY7nOdwUDqE3zQfkidI9UA96wtQp0zKbTg/5jQdEpenoNbAIHuBegYuI8KI1+vZGF07UzSYSkaXI6u+2gFAykMy1yUokIrxoLDOcIt/cPLXfmylS2DeWyyzdW2zxp+g/3EXF3EgEnAEZ3KhDmoaSPgAAAABJRU5ErkJggg==" InformativeScreenshot="09ef748ebf69fb57dd91f0a860a518a4.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Cheap Flights, Lowest Price Air Tickets &amp;amp; Airfares | Trip.com Malaysia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="692, 368, 121, 44" FuzzySelectorArgument="&lt;webctrl type='' class='fuzzy-label user-select fuzzy-label-map' parentid='main' tag='SPAN' aaname='' check:innerText='Kota Kinabalu&amp;#xA;All airports' /&gt;" Guid="07884d52-d41a-4f1b-bec2-30c95fda9197" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayBefore="1" DisplayName="Type Into 'Multi-city'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1024,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="92ba3d1c-b537-4975-a620-6dea06a9c678" Text="[ArrivingTo]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://my.trip.com/flights?locale=en_my&amp;curr=myr&amp;allianceid=14900&amp;sid=1910274&amp;ppcid=ckid-11144453242_adid-83425855246451_akid-kwd-83426630143072:loc-112_adgid-1334809506148564&amp;utm_source=bing&amp;utm_medium=cpc&amp;utm_campaign=603356249&amp;msclkid=efff59ce9b4a150d58733f30d02f97f8" CVScreenId="b1c62905-2cfe-4e87-8d6b-0cd4f3cd382c" CvElementArea="670, 361, 282, 58" CvType="InputBox" DesignTimeRectangle="690, 368, 68, 44" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl type='text' tag='INPUT' class='module-input f-16 f-bold color-main placeholder-gray' placeholder='Going to' aaname='' /&gt;" Guid="91824a65-e7ae-4b27-b4e9-672ed5ab079e" InformativeScreenshot="25755a066435a048768f76034090ce04.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Cheap Flights, Lowest Price Air Tickets &amp;amp; Airfares | Trip.com Malaysia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="b1c62905-2cfe-4e87-8d6b-0cd4f3cd382c" CvTextArea="604, 330, 59, 17" CvTextArgument="Multi-city" CvType="Text" DesignTimeRectangle="603, 331, 59, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Multi-city' parentid='main' tag='SPAN' type='' class='' check:innerText='Multi-city' /&gt;" Guid="f5f1cc41-9d8e-4e96-8fc2-7f135b042929" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayBefore="1" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="1024,247" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
+                <uix:NKeyboardShortcuts.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NKeyboardShortcuts.VerifyOptions>
+              </uix:NKeyboardShortcuts>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="1" DisplayName="Click 'EM'" sap:VirtualizedContainerService.HintSize="1024,225" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="92ba3d1c-b537-4975-a620-6dea06a9c678" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://my.trip.com/flights?locale=en_my&amp;curr=myr&amp;allianceid=14900&amp;sid=1910274&amp;ppcid=ckid-11144453242_adid-83425855246451_akid-kwd-83426630143072:loc-112_adgid-1334809506148564&amp;utm_source=bing&amp;utm_medium=cpc&amp;utm_campaign=603356249&amp;msclkid=efff59ce9b4a150d58733f30d02f97f8" CVScreenId="862c41d3-1fe5-4c6b-9854-011b3a1efd4d" CvTextArea="972, 382, 61, 16" CvTextArgument="Sat, Oct 5" CvType="Text" DesignTimeRectangle="970, 368, 110, 44" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl type='text' tag='INPUT' class='module-input f-14 f-bold color-main placeholder-black' placeholder='Any date' aaname='' /&gt;" Guid="9f73d4e8-c2f8-49cc-9b95-211965cf2dab" InformativeScreenshot="364bb10b814c4efac4127444c9eb887c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Cheap Flights, Lowest Price Air Tickets &amp;amp; Airfares | Trip.com Malaysia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="1086, 390, 24, 1" FuzzySelectorArgument="&lt;webctrl tag='EM' type='' class='rdate-line' aaname='' /&gt;" Guid="1aa25934-04ef-447c-9a29-37ffdbcdd3fa" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1024,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,240" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetText DisplayName="Get Text 'SPAN'" sap:VirtualizedContainerService.HintSize="382,180" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="92ba3d1c-b537-4975-a620-6dea06a9c678" TextString="[MonthYear]" Version="V4">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://my.trip.com/flights?locale=en_my&amp;curr=myr&amp;allianceid=14900&amp;sid=1910274&amp;ppcid=ckid-11144453242_adid-83425855246451_akid-kwd-83426630143072:loc-112_adgid-1334809506148564&amp;utm_source=bing&amp;utm_medium=cpc&amp;utm_campaign=603356249&amp;msclkid=bcd5467ab5241b5739572085f514c91d" CVScreenId="15ba208d-9548-48ee-a132-ef80f773ae6c" CvTextArea="938, 457, 65, 15" CvType="AnyWordGroup" DesignTimeRectangle="937, 457, 66, 15" DesignTimeScaleFactor="1" ElementType="Text" Guid="4896d300-4f67-45a6-b48e-cddaf633374d" InformativeScreenshot="620366c25c0efa2c4dae8eabc473ce27.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Cheap Flights, Lowest Price Air Tickets &amp;amp; Airfares | Trip.com Malaysia' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="15ba208d-9548-48ee-a132-ef80f773ae6c" CvElementArea="815, 457, 21, 24" CvType="ArrowButton" DesignTimeRectangle="819, 460, 14, 21" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='main' tag='SPAN' class='c-calendar-icon-prev is-disable' aaname='' /&gt;" Guid="4c818d83-61ee-47c1-a7c8-b6b456e48470" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                  </Sequence>
+                </ui:CommentOut.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:CommentOut>
+              <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="1024,769" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                <ui:InterruptibleWhile.Body>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="988,578" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NCheckState DisplayName="Check App State 'Nov 2024'" sap:VirtualizedContainerService.HintSize="954,518" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="92ba3d1c-b537-4975-a620-6dea06a9c678" Version="V4">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,278" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '13'" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="92ba3d1c-b537-4975-a620-6dea06a9c678" Version="V4">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://my.trip.com/flights?locale=en_my&amp;curr=myr&amp;allianceid=14900&amp;sid=1910274&amp;ppcid=ckid-11144453242_adid-83425855246451_akid-kwd-83426630143072:loc-112_adgid-1334809506148564&amp;utm_source=bing&amp;utm_medium=cpc&amp;utm_campaign=603356249&amp;msclkid=d4f96691aa0912587f790192e17b7ec7" CVScreenId="f65bfe2f-73d0-49cf-99f1-9d06598f27dc" CvTextArea="914, 689, 16, 14" CvTextArgument="13" CvType="Text" DesignTimeRectangle="898, 688, 48, 16" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='13' class='day' parentid='main' tag='SPAN' type='' check:innerText='13' /&gt;" Guid="f953e6ff-63d9-437c-9f05-981f0848ac91" InformativeScreenshot="a24396f258b75b41eaae3f96c8a42464.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Cheap Flights, Lowest Price Air Tickets &amp;amp; Airfares | Trip.com Malaysia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target CVScreenId="f65bfe2f-73d0-49cf-99f1-9d06598f27dc" CvElementArea="815, 526, 20, 23" CvTextArea="943, 527, 53, 12" CvTextArgument="Nov 2024" CvType="ArrowButton" DesignTimeRectangle="803, 506, 335, 56" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='c-fuzzy-calendar-month__title' aaname='Nov 2024' check:innerText='Nov 2024' /&gt;" Guid="4110bd9e-633b-407c-bb92-8ab3058efeaf" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                            <uix:NClick.VerifyOptions>
+                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionOptions.Retry>
+                                <uix:VerifyExecutionOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionOptions.Timeout>
+                              </uix:VerifyExecutionOptions>
+                            </uix:NClick.VerifyOptions>
+                          </uix:NClick>
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,278" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Dec 2024'" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="92ba3d1c-b537-4975-a620-6dea06a9c678" Version="V4">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://my.trip.com/flights?locale=en_my&amp;curr=myr&amp;allianceid=14900&amp;sid=1910274&amp;ppcid=ckid-11144453242_adid-83425855246451_akid-kwd-83426630143072:loc-112_adgid-1334809506148564&amp;utm_source=bing&amp;utm_medium=cpc&amp;utm_campaign=603356249&amp;msclkid=d4f96691aa0912587f790192e17b7ec7" CVScreenId="65be1e4a-0113-4b5b-a9d2-0a628b568637" CvElementArea="1475, 526, 20, 23" CvType="ArrowButton" DesignTimeRectangle="1479, 528, 14, 21" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='c-fuzzy-calendar-icon-next' parentid='main' tag='SPAN' type='' aaname='' /&gt;" Guid="6a04484f-f0c9-4878-a52d-1dbaea96c8b1" InformativeScreenshot="2bdb6b6ced5f6f3bdc8076f8d2152856.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Cheap Flights, Lowest Price Air Tickets &amp;amp; Airfares | Trip.com Malaysia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target CVScreenId="65be1e4a-0113-4b5b-a9d2-0a628b568637" CvTextArea="1315, 527, 52, 12" CvTextArgument="Dec 2024" CvType="Text" DesignTimeRectangle="1315, 527, 52, 12" ElementType="Text" Guid="a6ba9691-75bd-4b0e-b2c2-a55f9647658f" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                            <uix:NClick.VerifyOptions>
+                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionOptions.Retry>
+                                <uix:VerifyExecutionOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionOptions.Timeout>
+                              </uix:VerifyExecutionOptions>
+                            </uix:NClick.VerifyOptions>
+                          </uix:NClick>
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable BrowserURL="https://my.trip.com/flights?locale=en_my&amp;curr=myr&amp;allianceid=14900&amp;sid=1910274&amp;ppcid=ckid-11144453242_adid-83425855246451_akid-kwd-83426630143072:loc-112_adgid-1334809506148564&amp;utm_source=bing&amp;utm_medium=cpc&amp;utm_campaign=603356249&amp;msclkid=d4f96691aa0912587f790192e17b7ec7" CVScreenId="1b43925d-275e-4bcf-9345-ac0c8403b7e3" CvElementArea="815, 526, 20, 23" CvTextArea="943, 527, 53, 12" CvTextArgument="Nov 2024" CvType="ArrowButton" DesignTimeRectangle="815, 526, 181, 23" DesignTimeScaleFactor="1" ElementType="Text" Guid="e1ac958c-d85d-4e52-83c0-dda486067487" InformativeScreenshot="35c1143f6330d2f02b0905fd9cbacbb6.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Cheap Flights, Lowest Price Air Tickets &amp;amp; Airfares | Trip.com Malaysia' /&gt;" SearchSteps="CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="bfefba79-77e8-4e09-ad5c-030856393a4c" CvTextArea="801, 462, 249, 17" CvTextArgument="Select flexible departure dates" CvType="Text" DesignTimeRectangle="803, 460, 247, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='title' tag='P' type='' aaname=' Select flexible departure dates' check:innerText='Select flexible departure dates' /&gt;" Guid="179a22be-1c52-4c1b-856b-c641db486275" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NCheckState.Target>
+                    </uix:NCheckState>
+                  </Sequence>
+                </ui:InterruptibleWhile.Body>
+                <ui:InterruptibleWhile.Condition>
+                  <Literal x:TypeArguments="x:Boolean" DisplayName="Literal" Value="True" />
+                </ui:InterruptibleWhile.Condition>
+              </ui:InterruptibleWhile>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB9SURBVDhPY1B2+/+fEjyIDNDw+v//zx/82CUJjwHqnv//v/sIwR8+/YeDT18Q4k4JeAxAxoZBUN1A4J+NKY+MRw0g0gB9n4//L8w0+/96ufj/8IRDKGqJMiA5dcv//xsYwHh5WyqKWtq4AIRVPSAYmxwyxmkAsZhCA/7/BwAWcJ6rEMyQeQAAAABJRU5ErkJggg==" InformativeScreenshot="cb1e2a8840f57a19ece1bf16f8f397ff.jpg" Selector="&lt;html app='msedge.exe' title='Cheap Flights, Lowest Price Air Tickets &amp;amp; Airfares | Trip.com Malaysia' /&gt;" Title="Cheap Flights, Lowest Price Air Tickets &amp; Airfares | Trip.com Malaysia" Url="https://my.trip.com/flights?locale=en_my&amp;curr=myr&amp;allianceid=14900&amp;sid=1910274&amp;ppcid=ckid-11144453242_adid-83425855246451_akid-kwd-83426630143072:loc-112_adgid-1334809506148564&amp;utm_source=bing&amp;utm_medium=cpc&amp;utm_campaign=603356249&amp;msclkid=efff59ce9b4a150d58733f30d02f97f8" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

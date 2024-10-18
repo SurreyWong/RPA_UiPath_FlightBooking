@@ -1,0 +1,653 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1207,8142" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="708,8119" sap2010:WorkflowViewState.IdRef="Sequence_10">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="strCheckIn" />
+        <Variable x:TypeArguments="x:String" Name="strInMonthYear" />
+        <Variable x:TypeArguments="x:String" Name="strInDateOnly" />
+        <Variable x:TypeArguments="x:String" Name="CheckInDate" />
+        <Variable x:TypeArguments="x:String" Name="strCheckOut" />
+        <Variable x:TypeArguments="x:String" Name="strOutMonthYear" />
+        <Variable x:TypeArguments="x:String" Name="CheckOutDate" />
+        <Variable x:TypeArguments="x:String" Name="strOutDateOnly" />
+        <Variable x:TypeArguments="x:String" Name="Destination" />
+        <Variable x:TypeArguments="x:Int32" Name="Adult" />
+        <Variable x:TypeArguments="x:Int32" Name="Children" />
+        <Variable x:TypeArguments="x:Int32" Name="Room" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="674,271" sap2010:WorkflowViewState.IdRef="InputDialog_13" IsPassword="False" Label="Where are you going?" Title="Destination">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[Destination]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="674,271" sap2010:WorkflowViewState.IdRef="InputDialog_11" IsPassword="False" Label="Enter check in date dd/MM/yyyy" Title="Check In Date">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[strCheckIn]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="674,271" sap2010:WorkflowViewState.IdRef="InputDialog_12" IsPassword="False" Label="Enter check out date dd/MM/yyyy" Title="Check Out Date">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[strCheckOut]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="674,271" sap2010:WorkflowViewState.IdRef="InputDialog_14" IsPassword="False" Label="Enter number of adult:" Title="Adult">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:Int32">[Adult]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="674,271" sap2010:WorkflowViewState.IdRef="InputDialog_15" IsPassword="False" Label="Enter number of children:" Title="Children">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:Int32">[Children]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <Sequence DisplayName="age of children" sap:VirtualizedContainerService.HintSize="674,831" sap2010:WorkflowViewState.IdRef="Sequence_27">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="x:Int32" Name="CountChildren" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Assign sap:VirtualizedContainerService.HintSize="504,114" sap2010:WorkflowViewState.IdRef="Assign_12">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:Int32">[CountChildren]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:Int32">0</InArgument>
+          </Assign.Value>
+        </Assign>
+        <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[Children&lt;&gt; CountChildren]" DisplayName="While" sap:VirtualizedContainerService.HintSize="504,625" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_10">
+          <ui:InterruptibleWhile.Body>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,436" sap2010:WorkflowViewState.IdRef="Sequence_28">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" Result="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="434,271" sap2010:WorkflowViewState.IdRef="InputDialog_17" IsPassword="False" Title="Children Age" />
+              <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_13">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Int32">[CountChildren]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Int32">[CountChildren + 1]</InArgument>
+                </Assign.Value>
+              </Assign>
+            </Sequence>
+          </ui:InterruptibleWhile.Body>
+        </ui:InterruptibleWhile>
+      </Sequence>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="674,271" sap2010:WorkflowViewState.IdRef="InputDialog_16" IsPassword="False" Label="Enter number of rooms:" Title="Room">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:Int32">[Room]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <Assign sap:VirtualizedContainerService.HintSize="674,114" sap2010:WorkflowViewState.IdRef="Assign_2">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[strInMonthYear]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[DateTime.ParseExact(strCheckIn, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture).ToString("MMMM yyyy")]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="674,114" sap2010:WorkflowViewState.IdRef="Assign_3">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[CheckInDate]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[DateTime.ParseExact(strCheckIn, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture).ToString("d MMMM yyyy")]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="674,114" sap2010:WorkflowViewState.IdRef="Assign_4">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[strInDateOnly]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[DateTime.ParseExact(strCheckIn, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture).ToString("d/MM").Split("/"c)(0).Trim]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="674,114" sap2010:WorkflowViewState.IdRef="Assign_5">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[strOutMonthYear]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[DateTime.ParseExact(strCheckOut, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture).ToString("MMMM yyyy")]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="674,114" sap2010:WorkflowViewState.IdRef="Assign_6">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[CheckOutDate]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[DateTime.ParseExact(strCheckOut, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture).ToString("d MMMM yyyy")]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="674,114" sap2010:WorkflowViewState.IdRef="Assign_7">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[strOutDateOnly]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[DateTime.ParseExact(strCheckOut, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture).ToString("d/MM").Split("/"c)(0).Trim]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Booking.com | Official site | The best hotels, flights, car rentals &amp; accommodatio" sap:VirtualizedContainerService.HintSize="674,4895" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="0fddc0f1-b661-40ba-b877-7c057040bffa" Timeout="60" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="640,4655" sap2010:WorkflowViewState.IdRef="Sequence_11">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="strCalendar" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'I’m looking for flights'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="606,286" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="0fddc0f1-b661-40ba-b877-7c057040bffa" Text="[Destination]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.booking.com/index.en-gb.html?label=gen173bo-1DEg1mbGlnaHRzX2luZGV4KIICQgVpbmRleEgJWANooQGIAQGYAQm4ARfIAQzYAQPoAQH4AQaIAgGYAgKoAgO4AtfJmLgGwAIB0gIkMTk1NGIwNzUtYjVlZi00NzgzLTkxZjMtOTRlOGVlMTdiOWY02AIE4AIB&amp;aid=304142&amp;selected_currency=MYR&amp;sid=d15ca0abc717bee93af82fc2d9cbee49" CVScreenId="9aa7ac99-29a3-4b8a-943a-840dea60bca8" CvElementArea="412, 461, 387, 59" CvType="InputBox" DesignTimeRectangle="455, 473, 334, 36" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id=':rj:' tag='INPUT' type='' class='eb46370fe1' placeholder='Where are you going?' aaname='' /&gt;" Guid="a7e164f1-9f20-4100-9098-86fe130a3d96" InformativeScreenshot="7990e4113f55c9d35cc462fa73fdd1be.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Booking.com | Official site | The best hotels, flights, car rentals &amp;amp; accommodations' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="9aa7ac99-29a3-4b8a-943a-840dea60bca8" CvTextArea="438, 541, 133, 16" CvTextArgument="I'm looking for flights" CvType="Text" DesignTimeRectangle="411, 538, 160, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='I’m looking for flights' parentid='indexsearch' tag='DIV' type='' class='a53cbfa6de e6208ee469' check:innerText='I’m looking for flights' /&gt;" Guid="13318661-e8f9-4671-b98f-d8deb72ffcb1" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="1" DisplayName="Click 'Check-in date'" sap:VirtualizedContainerService.HintSize="606,225" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0fddc0f1-b661-40ba-b877-7c057040bffa" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaKEBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuAKp8Y24BsACAdICJGRjMTU5YjIwLTBlODQtNDEwOS1iNjAzLWEwZjYwNzAzNDFiNdgCBeACAQ&amp;sid=ff6b5c3c96e481d52d7c6000165fecb3&amp;keep_landing=1&amp;sb_price_type=total&amp;" CVScreenId="fbb6a4da-4a36-451a-89f0-37463ebf190a" CvElementArea="799, 461, 297, 58" CvTextArea="848, 483, 88, 13" CvTextArgument="Check-in date" CvType="Button" DesignTimeRectangle="841, 472, 102, 36" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl parentid='indexsearch' tag='BUTTON' type='button' class='ebbedaf8ac ab26a5d2bd e33c97ff6b' aaname='Check-in date' check:innerText='Check-in date' /&gt;" Guid="1bed32a9-808d-41d7-86a9-bdd3e5583edf" InformativeScreenshot="38a399fc496e58c34a279894621d5889.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Booking.com | Official site | The best hotels, flights, car rentals &amp;amp; accommodations' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="b5613f16-c057-4e85-be93-e813c6cdfe6e" CvElementArea="799, 461, 297, 58" CvTextArea="964, 483, 98, 13" CvTextArgument="Check-out date" CvType="Button" DesignTimeRectangle="965, 480, 97, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Check-out date' parentid='indexsearch' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Check-out date' parentid='indexsearch' tag='SPAN' type='' class='a8887b152e' check:innerText='Check-out date' /&gt;" Guid="b445d20b-f9e5-45fd-9189-16141764ef7f" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NGetText DisplayName="Get Text 'Check-in date'" sap:VirtualizedContainerService.HintSize="606,189" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="0fddc0f1-b661-40ba-b877-7c057040bffa" TextString="[strCalendar]" Version="V4">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaKEBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuAKp8Y24BsACAdICJGRjMTU5YjIwLTBlODQtNDEwOS1iNjAzLWEwZjYwNzAzNDFiNdgCBeACAQ&amp;sid=ff6b5c3c96e481d52d7c6000165fecb3&amp;keep_landing=1&amp;sb_price_type=total&amp;" CVScreenId="becede82-4835-464b-87e9-ba32d4e72fe5" CvTextArea="921, 593, 104, 15" CvType="AnyWordGroup" DesignTimeRectangle="833, 577, 281, 48" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='e1eebb6a1e ee7ec6b631' /&gt;" Guid="a9f36d3b-aa4a-474c-b5ad-e533ba7bdb26" InformativeScreenshot="7937dadd817997a3c8eede1018b95f60.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Booking.com | Official site | The best hotels, flights, car rentals &amp;amp; accommodations' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="becede82-4835-464b-87e9-ba32d4e72fe5" CvElementArea="799, 461, 296, 58" CvTextArea="847, 483, 89, 13" CvTextArgument="Check-in date" CvType="Button" DesignTimeRectangle="849, 480, 86, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Check-in date' parentid='indexsearch' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Check-in date' parentid='indexsearch' tag='SPAN' type='' class='a8887b152e' check:innerText='Check-in date' /&gt;" Guid="164a1125-c7f5-48aa-be8b-dbfe9dc15d80" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[strInMonthYear.Trim&lt;&gt;strCalendar.Trim]" DisplayName="While" sap:VirtualizedContainerService.HintSize="606,663" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+                <ui:InterruptibleWhile.Body>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,465" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0fddc0f1-b661-40ba-b877-7c057040bffa" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaKEBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuAKp8Y24BsACAdICJGRjMTU5YjIwLTBlODQtNDEwOS1iNjAzLWEwZjYwNzAzNDFiNdgCBeACAQ&amp;sid=ff6b5c3c96e481d52d7c6000165fecb3&amp;keep_landing=1&amp;sb_price_type=total&amp;" CVScreenId="de8f3f44-9ee9-4719-90d8-3bcff2107f58" CvElementArea="1392, 589, 21, 23" CvType="ArrowButton" DesignTimeRectangle="1379, 577, 48, 48" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Next month' tag='BUTTON' type='button' class='a83ed08757 c21c56c305 f38b6daa18 d691166b09 f671049264 f4552b6561 dc72a8413c f073249358' aaname='' /&gt;" Guid="9410d517-9a5e-4dba-a2be-6112e21c144d" InformativeScreenshot="68319036737eaf24957a6fdcba6622de.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Booking.com | Official site | The best hotels, flights, car rentals &amp;amp; accommodations' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="de8f3f44-9ee9-4719-90d8-3bcff2107f58" CvElementArea="1396, 460, 114, 60" CvTextArea="1421, 481, 62, 18" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1422, 476, 61, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Search' parentid='indexsearch' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Search' parentid='indexsearch' tag='SPAN' type='' class='e4adce92df' check:innerText='Search' /&gt;" Guid="828be8e7-2c33-4920-970a-11b65c8be2fb" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NGetText DisplayName="Get Text 'Check-in date'" sap:VirtualizedContainerService.HintSize="382,180" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="0fddc0f1-b661-40ba-b877-7c057040bffa" TextString="[strCalendar]" Version="V4">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaKEBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuAKp8Y24BsACAdICJGRjMTU5YjIwLTBlODQtNDEwOS1iNjAzLWEwZjYwNzAzNDFiNdgCBeACAQ&amp;sid=ff6b5c3c96e481d52d7c6000165fecb3&amp;keep_landing=1&amp;sb_price_type=total&amp;" CVScreenId="becede82-4835-464b-87e9-ba32d4e72fe5" CvTextArea="921, 593, 104, 15" CvType="AnyWordGroup" DesignTimeRectangle="833, 577, 281, 48" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='e1eebb6a1e ee7ec6b631' /&gt;" Guid="a9f36d3b-aa4a-474c-b5ad-e533ba7bdb26" InformativeScreenshot="7937dadd817997a3c8eede1018b95f60.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Booking.com | Official site | The best hotels, flights, car rentals &amp;amp; accommodations' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="becede82-4835-464b-87e9-ba32d4e72fe5" CvElementArea="799, 461, 296, 58" CvTextArea="847, 483, 89, 13" CvTextArgument="Check-in date" CvType="Button" DesignTimeRectangle="849, 480, 86, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Check-in date' parentid='indexsearch' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Check-in date' parentid='indexsearch' tag='SPAN' type='' class='a8887b152e' check:innerText='Check-in date' /&gt;" Guid="164a1125-c7f5-48aa-be8b-dbfe9dc15d80" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                  </Sequence>
+                </ui:InterruptibleWhile.Body>
+              </ui:InterruptibleWhile>
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="606,139" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="10abe6c3-e257-4567-bec4-9308715bec94" InformativeScreenshot="2dbec1944173f88e7e9d4e8d29e8fa5c" Selector="[string.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='{0}' tag='SPAN' /&gt;&quot;, strInDateOnly)]">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Click.Target>
+              </ui:Click>
+              <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[strOutMonthYear.Trim&lt;&gt;strCalendar.Trim]" DisplayName="While" sap:VirtualizedContainerService.HintSize="606,663" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_3">
+                <ui:InterruptibleWhile.Body>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,465" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0fddc0f1-b661-40ba-b877-7c057040bffa" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaKEBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuAKp8Y24BsACAdICJGRjMTU5YjIwLTBlODQtNDEwOS1iNjAzLWEwZjYwNzAzNDFiNdgCBeACAQ&amp;sid=ff6b5c3c96e481d52d7c6000165fecb3&amp;keep_landing=1&amp;sb_price_type=total&amp;" CVScreenId="449110e8-ff77-4882-9b5b-295d06dec854" CvElementArea="1392, 589, 21, 23" CvType="ArrowButton" DesignTimeRectangle="1393, 591, 20, 20" DesignTimeScaleFactor="1" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl parentid='calendar-searchboxdatepicker' tag='svg' type='' class='' aaname='' /&gt;" Guid="bf352340-23b4-4be4-bc5f-dd3ff03413e5" InformativeScreenshot="95e767f3bbff135ac4ccc2df8d869071.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Booking.com | Official site | The best hotels, flights, car rentals &amp;amp; accommodations' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="449110e8-ff77-4882-9b5b-295d06dec854" CvTextArea="1240, 543, 68, 13" CvTextArgument="I'm flexible" CvType="Text" DesignTimeRectangle="1241, 540, 66, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='I&amp;apos;m flexible' parentid='indexsearch' tag='SPAN' type='' class='a53cbfa6de' check:innerText='I&amp;apos;m flexible' /&gt;" Guid="75b42d97-330c-42a7-8266-d0b7360b55e6" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NGetText DisplayName="Get Text 'Check-in date'" sap:VirtualizedContainerService.HintSize="382,180" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="0fddc0f1-b661-40ba-b877-7c057040bffa" TextString="[strCalendar]" Version="V4">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaKEBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuAKp8Y24BsACAdICJGRjMTU5YjIwLTBlODQtNDEwOS1iNjAzLWEwZjYwNzAzNDFiNdgCBeACAQ&amp;sid=ff6b5c3c96e481d52d7c6000165fecb3&amp;keep_landing=1&amp;sb_price_type=total&amp;" CVScreenId="449110e8-ff77-4882-9b5b-295d06dec854" CvTextArea="921, 593, 104, 15" CvType="AnyWordGroup" DesignTimeRectangle="833, 577, 281, 48" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='e1eebb6a1e ee7ec6b631' /&gt;" Guid="71361624-73d0-4d47-8cb4-f4a9fecd6a61" InformativeScreenshot="93174f975bd6f233dcdc402b01efc94b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Booking.com | Official site | The best hotels, flights, car rentals &amp;amp; accommodations' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="449110e8-ff77-4882-9b5b-295d06dec854" CvTextArea="941, 543, 57, 13" CvTextArgument="Calendar" CvType="Text" DesignTimeRectangle="942, 540, 54, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Calendar' parentid='indexsearch' tag='SPAN' type='' class='a53cbfa6de' check:innerText='Calendar' /&gt;" Guid="7e061063-68be-4c06-acc8-dfa247adb028" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                  </Sequence>
+                </ui:InterruptibleWhile.Body>
+              </ui:InterruptibleWhile>
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="606,139" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="02ed963c-7f9a-40ab-b70c-f3c93f372f48" InformativeScreenshot="e697e0fc250ebbaa965c57c09b545f63" Selector="[string.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='{0}' tag='SPAN' /&gt;&quot;, strOutDateOnly)]">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Click.Target>
+              </ui:Click>
+              <Sequence DisplayName="Drop down Adult" sap:VirtualizedContainerService.HintSize="606,1509" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Search'" sap:VirtualizedContainerService.HintSize="572,225" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0fddc0f1-b661-40ba-b877-7c057040bffa" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaKEBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuAKp8Y24BsACAdICJGRjMTU5YjIwLTBlODQtNDEwOS1iNjAzLWEwZjYwNzAzNDFiNdgCBeACAQ&amp;sid=ff6b5c3c96e481d52d7c6000165fecb3&amp;keep_landing=1&amp;sb_price_type=total&amp;" CVScreenId="e28acab2-e344-4de4-a802-0fe8fe5ff9a9" CvElementArea="1097, 460, 299, 57" CvType="InputBox" DesignTimeRectangle="1364, 482, 16, 16" DesignTimeScaleFactor="1" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl type='' parentid='indexsearch' tag='svg' class='' aaname='' /&gt;" Guid="7cd13760-b483-442a-b8f7-05986babd3d7" InformativeScreenshot="efff33e91ebe1711ebb4239e3bbf0cec.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Booking.com | Official site | The best hotels, flights, car rentals &amp;amp; accommodations' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <uix:Target CVScreenId="e28acab2-e344-4de4-a802-0fe8fe5ff9a9" CvElementArea="1396, 459, 114, 60" CvTextArea="1421, 480, 62, 18" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1422, 475, 61, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Search' parentid='indexsearch' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Search' parentid='indexsearch' tag='SPAN' type='' class='e4adce92df' check:innerText='Search' /&gt;" Guid="b2ea16cc-6c25-4d76-bbcb-b4ada3f4715c" SearchSteps="Selector, FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <If Condition="[Adult&lt;2]" sap:VirtualizedContainerService.HintSize="572,1190" sap2010:WorkflowViewState.IdRef="If_2">
+                  <If.Then>
+                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,276" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="382,216" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0fddc0f1-b661-40ba-b877-7c057040bffa" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaKEBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuAKp8Y24BsACAdICJGRjMTU5YjIwLTBlODQtNDEwOS1iNjAzLWEwZjYwNzAzNDFiNdgCBeACAQ&amp;sid=ff6b5c3c96e481d52d7c6000165fecb3&amp;keep_landing=1&amp;sb_price_type=total&amp;" DesignTimeRectangle="1249, 569, 16, 16" DesignTimeScaleFactor="1" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl parentid=':ri:' tag='svg' type='' class='' aaname='' /&gt;" Guid="aa906790-bf35-4b2c-a8bd-fc3ecde75b41" InformativeScreenshot="a23d168daeb193511bfc14db97b6ab76.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Booking.com | Official site | The best hotels, flights, car rentals &amp;amp; accommodations' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="4b0dab14-ad24-4193-b823-529c619b51a8" CvElementArea="1235, 554, 128, 45" CvTextArea="1294, 570, 9, 13" CvTextArgument="2" CvType="Button" DesignTimeRectangle="1281, 567, 36, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='2' parentid=':ri:' tag='SPAN' type='' class='d723d73d5f' check:innerText='2' /&gt;" Guid="47bc5aac-e07a-4d45-bf95-9ea786f9c338" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="538,753" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Int32" Name="CountAdult" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="504,114" sap2010:WorkflowViewState.IdRef="Assign_8">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[CountAdult]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">2</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="504,579" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_7">
+                        <ui:InterruptibleWhile.Body>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,390" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Search'" sap:VirtualizedContainerService.HintSize="434,225" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0fddc0f1-b661-40ba-b877-7c057040bffa" Version="V4">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaKEBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuAKp8Y24BsACAdICJGRjMTU5YjIwLTBlODQtNDEwOS1iNjAzLWEwZjYwNzAzNDFiNdgCBeACAQ&amp;sid=ff6b5c3c96e481d52d7c6000165fecb3&amp;keep_landing=1&amp;sb_price_type=total&amp;" CVScreenId="3613eb69-bedd-4a79-b228-ff247a43dda8" CvElementArea="1235, 554, 128, 45" CvType="Button" DesignTimeRectangle="1333, 569, 16, 16" DesignTimeScaleFactor="1" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl type='' parentid=':ri:' tag='svg' class='' aaname='' /&gt;" Guid="8868f2d6-ecc8-4e93-9999-c02d1f1f5e1c" InformativeScreenshot="7504fa7955ca75630147ddd25d4eda6b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Booking.com | Official site | The best hotels, flights, car rentals &amp;amp; accommodations' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="3613eb69-bedd-4a79-b228-ff247a43dda8" CvElementArea="1396, 459, 114, 60" CvTextArea="1421, 480, 62, 18" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1422, 475, 61, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Search' parentid='indexsearch' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Search' parentid='indexsearch' tag='SPAN' type='' class='e4adce92df' check:innerText='Search' /&gt;" Guid="6ede5f57-c7aa-4d65-b4c2-183626a12979" SearchSteps="Selector, FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                            </uix:NClick>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_9">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[CountAdult]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">[CountAdult + 1]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </ui:InterruptibleWhile.Body>
+                        <ui:InterruptibleWhile.Condition>
+                          <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="Adult&lt;&gt; CountAdult" />
+                        </ui:InterruptibleWhile.Condition>
+                      </ui:InterruptibleWhile>
+                    </Sequence>
+                  </If.Else>
+                </If>
+              </Sequence>
+              <Sequence DisplayName="Drop down children " sap:VirtualizedContainerService.HintSize="606,780" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:Int32" Name="CountChildren" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Assign sap:VirtualizedContainerService.HintSize="504,114" sap2010:WorkflowViewState.IdRef="Assign_10">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Int32">[CountChildren]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="504,581" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_8">
+                  <ui:InterruptibleWhile.Body>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,390" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="434,225" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0fddc0f1-b661-40ba-b877-7c057040bffa" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaKEBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuAKp8Y24BsACAdICJGRjMTU5YjIwLTBlODQtNDEwOS1iNjAzLWEwZjYwNzAzNDFiNdgCBeACAQ&amp;sid=ff6b5c3c96e481d52d7c6000165fecb3&amp;keep_landing=1&amp;sb_price_type=total&amp;" CVScreenId="0e783095-b45f-4f20-9967-53a0eba8dab6" CvElementArea="1235, 404, 129, 44" CvType="Button" DesignTimeRectangle="1321, 406, 40, 40" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl type='button' parentid=':ri:' tag='BUTTON' class='a83ed08757 c21c56c305 f38b6daa18 d691166b09 ab98298258 bb803d8689 f4d78af12a' aaname='' /&gt;" Guid="84a4c9c0-10be-466e-ab10-c6423566aebd" InformativeScreenshot="79402d2a18286b620c936aacc75427c2.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Booking.com | Official site | The best hotels, flights, car rentals &amp;amp; accommodations' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="0e783095-b45f-4f20-9967-53a0eba8dab6" CvTextArea="1075, 419, 55, 13" CvTextArgument="Children" CvType="Text" DesignTimeRectangle="1076, 416, 54, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Children' tag='LABEL' type='' class='a984a491d9' check:innerText='Children' /&gt;" Guid="30568892-a362-4b39-8096-9855f804a54b" SearchSteps="FuzzySelector, CV" />
+                                <uix:Target CVScreenId="0e783095-b45f-4f20-9967-53a0eba8dab6" CvTextArea="1075, 373, 42, 13" CvTextArgument="Adults" CvType="Text" DesignTimeRectangle="1076, 370, 41, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='a984a491d9' aaname='Adults' check:innerText='Adults' /&gt;" Guid="28b321aa-817f-4a3f-a393-59ca8f8517b1" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_11">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[CountChildren]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[CountChildren + 1]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </ui:InterruptibleWhile.Body>
+                  <ui:InterruptibleWhile.Condition>
+                    <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="Children&lt;&gt; CountChildren" />
+                  </ui:InterruptibleWhile.Condition>
+                </ui:InterruptibleWhile>
+              </Sequence>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Edge" IconBase64="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" InformativeScreenshot="806caeddc2cfe6cd54b05ce25c7ff487.jpg" Selector="&lt;html app='msedge.exe' title='Booking.com | Official site | The best hotels, flights, car rentals &amp;amp; accommodations' /&gt;" Title="Booking.com | Official site | The best hotels, flights, car rentals &amp; accommodations" Url="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaKEBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuAKp8Y24BsACAdICJGRjMTU5YjIwLTBlODQtNDEwOS1iNjAzLWEwZjYwNzAzNDFiNdgCBeACAQ&amp;sid=ff6b5c3c96e481d52d7c6000165fecb3&amp;keep_landing=1&amp;sb_price_type=total&amp;" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
